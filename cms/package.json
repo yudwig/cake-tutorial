@@ -1,0 +1,6 @@
+{
+	"scripts": {
+		"bake": "./bin/cake bake"
+	}
+}
+
