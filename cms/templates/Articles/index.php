@@ -20,9 +20,13 @@
             </td>
             <td>
                 <?= $this->Html->link('編集', ['action' => 'edit', $article->slug]) ?>
+                <?= $this->Form->postLink(
+                    '削除',
+                    ['action' => 'delete', $article->slug],
+                    ['confirm' => 'よろしいですか?'])
+                ?>
             </td>
         </tr>
     <?php endforeach; ?>
 
 </table>
-
