@@ -12,6 +12,7 @@ class ArticlesTable extends Table
     public function initialize(array $config) : void
     {
         $this->addBehavior('Timestamp');
+        $this->belongsToMany('Tags'); // この行を追加
     }
 
     public function beforeSave(EventInterface $event, $entity, $options)
